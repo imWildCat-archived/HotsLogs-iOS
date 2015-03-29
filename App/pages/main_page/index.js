@@ -20,7 +20,7 @@ var Network = require('../../utils/network');
 var IndexRankService = require('../../services/index_rank');
 
 var DeltaLabel = require('./delta_label');
-
+var ImageSources = require('../../utils/image_resources');
 
 class MainPage extends React.Component {
 
@@ -43,13 +43,16 @@ class MainPage extends React.Component {
   }
 
   _renderRow(rowData, sectionID, rowID) {
+    var imageName = ImageSources.getHeroImage(rowData.hero);
+    console.log(rowData.hero + ' : ' +imageName);
+    
     return (
       <View style={{height: 62, backgroundColor: '#300F46'}}>
         <View style={{height: 61, flexDirection: 'row', alignItems: 'center'}}>
           <View style={{flex:1, alignItems: 'center'}}>
             <Image
               style={{ width:30, height: 30, borderWidth:1, borderColor: '#F5A623'}}
-              source={{uri: rowData.avatar}}
+              source={{uri: imageName, isStatic: true}}
             />
           </View>
           <Text style={{flex: 2, textAlign: 'center', fontSize: 16, color: 'white'}}>{rowData.popularity}</Text>

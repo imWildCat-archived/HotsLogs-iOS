@@ -23,8 +23,6 @@ class DeltaLabel extends React.Component {
       color = 'red';
     }
 
-    console.log(this.props.style);
-
     var style = {
       textAlign: 'center',
       fontSize: 16,
@@ -34,8 +32,6 @@ class DeltaLabel extends React.Component {
     if(typeof this.props.style !== 'undefined') {
       style = merge(style, this.props.style);
     }
-
-
 
     return (
       <Text style={style}>{text}</Text>
