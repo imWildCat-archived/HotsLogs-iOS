@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>363206FA-72D9-48CD-809E-B52F22D97989</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HotsLogsIOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ECF549CD3DAC57E9760E102F3B0F6E8386F542FD</key>
+		<string>https://github.com/imWildCat/HotsLogs-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HotsLogsIOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ECF549CD3DAC57E9760E102F3B0F6E8386F542FD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/imWildCat/HotsLogs-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECF549CD3DAC57E9760E102F3B0F6E8386F542FD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECF549CD3DAC57E9760E102F3B0F6E8386F542FD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HotsLogsIOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
