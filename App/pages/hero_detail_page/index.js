@@ -15,6 +15,8 @@ var {
 
 var TabBarItemIOS = TabBarIOS.Item;
 
+var TalentsTab = require('./talents_tab');
+
 
 class HeroDetailPage extends React.Component {
 
@@ -26,7 +28,7 @@ class HeroDetailPage extends React.Component {
 
   _renderTab() {
     return (
-      <View></View>
+      <TalentsTab heroName={this.props.heroName} />
     )
   }
 

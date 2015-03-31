@@ -16,14 +16,33 @@ var {
 
 var MainPage = require('./App/pages/main_page');
 
+var HeroDetailPage = require('./App/pages/hero_detail_page/talents_tab');
+
 
 class App extends React.Component {
 
-  render() {
+  _onRightButtonPress() {
+    console.log(this.refs.nav.push);
+    this.refs.nav.push({
+      title: 'Jaina',
+      component: HeroDetailPage,
+      passProps: {heroName: 'Jaina'}
+    });
+
+  }
+
+  render(){
+    console.log(HeroDetailPage);
     return (
       <NavigatorIOS
+        ref="nav"
         style={styles.container}
-        initialRoute={{ component: MainPage, title: 'HotsLogs'}}
+        initialRoute={{
+          component: MainPage,
+          title: 'HotsLogs',
+          rightButtonTitle: 'TestView',
+          onRightButtonPress: this._onRightButtonPress.bind(this)
+          }}
         />
     );
   }
