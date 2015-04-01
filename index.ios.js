@@ -22,7 +22,6 @@ var HeroDetailPage = require('./App/pages/hero_detail_page/talents_tab');
 class App extends React.Component {
 
   _onRightButtonPress() {
-    console.log(this.refs.nav.push);
     this.refs.nav.push({
       title: 'Jaina',
       component: HeroDetailPage,
@@ -32,7 +31,6 @@ class App extends React.Component {
   }
 
   render(){
-    console.log(HeroDetailPage);
     return (
       <NavigatorIOS
         ref="nav"
@@ -40,8 +38,8 @@ class App extends React.Component {
         initialRoute={{
           component: MainPage,
           title: 'HotsLogs',
-          rightButtonTitle: 'TestView',
-          onRightButtonPress: this._onRightButtonPress.bind(this)
+          //rightButtonTitle: 'TestView',
+          //onRightButtonPress: this._onRightButtonPress.bind(this)
           }}
         />
     );

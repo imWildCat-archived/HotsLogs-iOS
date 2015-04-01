@@ -33,7 +33,7 @@ var getHeroTalents = function (heroName:string) {
 
           dataRows['l'+currentLevel].push({
             name: name,
-            icon: icon,
+            icon: 'https:' + icon,
             popularity: popularity,
             winRate: winRate
           });
@@ -41,7 +41,6 @@ var getHeroTalents = function (heroName:string) {
 
       }
 
-      console.log(dataRows);
 
       return dataRows;
     });

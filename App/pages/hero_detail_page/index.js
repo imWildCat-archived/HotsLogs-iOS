@@ -26,9 +26,15 @@ class HeroDetailPage extends React.Component {
     });
   }
 
-  _renderTab() {
+  _renderTalentsTab() {
     return (
       <TalentsTab heroName={this.props.heroName} />
+    )
+  }
+
+  _renderTab() {
+    return (
+      <View></View>
     )
   }
 
@@ -45,7 +51,7 @@ class HeroDetailPage extends React.Component {
               selectedTab: 'talents',
             });
           }}>
-        { this._renderTab() }
+        { this._renderTalentsTab() }
         </TabBarItemIOS>
         <TabBarItemIOS
           title="Builds"
